@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        #contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+#contact form {
+    background-color: #fff;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.left-right .left , .left-right .rightt  {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600
+}
+#contact form input {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+#contact form input:focus , textarea:focus {
+    border: 1px solid #29d9d5;
+}
+iframe {
+    height: 150px;
+    width: 100%;
+}
+#contact button {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact button:hover {
+    letter-spacing: 1px;
+}
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <h1 class="title center">Contact</h1>
+        <form action="">
+            <div class="left-right">
+                <div class="left">
+                    <label>Nom Complet</label>
+                    <input type="text">
+                    <label>Objet</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="rightt">
+                    <label>Numéro</label>
+                    <input type="text">
+                    <label>Date</label>
+                    <input type="text">
+                    <label>Autres Details</label>
+                    <input type="text">
+                    <label>Adresse</label>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6753647099836!2d10.107808814694264!3d33.87225633464191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12556fc41597702f%3A0xaf7eb7a2b7b76f03!2sGOMYCODE%20Gab%C3%A8s!5e0!3m2!1sfr!2stn!4v1679496282550!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+</body>
+</html>
